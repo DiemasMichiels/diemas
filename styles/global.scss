@@ -1,0 +1,144 @@
+@import 'variables';
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: hsl(var(--color-font));
+  font-size: 1.6rem;
+  font-family: var(--font-brand);
+  font-weight: 400;
+  background: hsl(var(--color-backgroundColor));
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  overflow-x: hidden;
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+::selection {
+  color: hsl(var(--color-black));
+  text-shadow: none;
+  background: hsl(var(--color-white));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.4rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+}
+
+button,
+a {
+  color: hsl(var(--color-font));
+  font-family: hsl(var(--font-brand));
+  cursor: pointer;
+}
+
+.visuallyHidden {
+  &:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+  }
+}
+
+.container {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
+}
+
+.button {
+  padding: 10px 16px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid hsl(var(--color-black));
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: hsl(var(--color-white));
+    background-color: hsl(var(--color-black));
+  }
+}
