@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react'
 
+// Check if a value was removed from localStorage
 const useLocalStorageRemoved = (key: string, onRemove: () => void) => {
   const lastKnownValue = useRef<string | null>(localStorage.getItem(key))
 
