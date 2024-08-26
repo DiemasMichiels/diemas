@@ -1,18 +1,12 @@
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
+import { SessionProvider } from 'next-auth/react'
 import SEO from '@root/next-seo.config'
 import type { AppProps } from 'next/app'
 
 import '@styles/global.scss'
 
-type PageProps = {}
-
-const App = ({
-  Component,
-  pageProps,
-}: Omit<AppProps<PageProps>, 'pageProps'> & {
-  pageProps: PageProps
-}) => {
+const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
   return (
     <>
       <Head>
@@ -24,7 +18,9 @@ const App = ({
         <meta name='theme-color' content='#ffffff' />
       </Head>
       <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
+      <SessionProvider session={session}>
+        <Component {...pageProps} />
+      </SessionProvider>
     </>
   )
 }
