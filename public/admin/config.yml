@@ -8,6 +8,7 @@ backend:
 
 media_folder: 'public/images'
 public_folder: '/images'
+logo_url: https://diemas.vercel.app/icon.svg
 
 collections:
   - name: 'blog'

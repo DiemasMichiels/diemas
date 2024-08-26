@@ -1,6 +1,7 @@
 import { signOut, useSession } from 'next-auth/react'
 import CMS from '@sveltia/cms'
 import useLocalStorageRemoved from '@hooks/useLocalStorageRemoved'
+import useDOMManipulations from '@hooks/useDOMManipulations'
 
 declare global {
   interface Window {
@@ -18,6 +19,22 @@ const CMSComponent = () => {
       signOut()
     }
   })
+
+  useDOMManipulations([
+    {
+      selector: 'body > div.sui.app-shell > .outer .main .container .inner',
+      callback: (element) => {
+        const logo = element?.childNodes[0] as HTMLImageElement
+        const title = element?.childNodes[2] as HTMLHeadingElement
+        if (logo) {
+          logo.src = '/icon.svg'
+        }
+        if (title) {
+          title.textContent = 'Diemas CMS'
+        }
+      },
+    },
+  ])
 
   return <div />
 }
