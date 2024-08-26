@@ -1,4 +1,4 @@
-import { signOut } from 'next-auth/react'
+import { signOut, useSession } from 'next-auth/react'
 import CMS from '@sveltia/cms'
 import useLocalStorageRemoved from '@hooks/useLocalStorageRemoved'
 
@@ -11,8 +11,12 @@ declare global {
 window.CMS = CMS
 
 const CMSComponent = () => {
+  const { data: session } = useSession()
+
   useLocalStorageRemoved('sveltia-cms.user', () => {
-    signOut()
+    if (session) {
+      signOut()
+    }
   })
 
   return <div />
