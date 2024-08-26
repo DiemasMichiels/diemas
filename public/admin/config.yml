@@ -3,7 +3,7 @@ backend:
   name: github
   repo: DiemasMichiels/diemas
   branch: main
-  base_url: http://localhost:3000
+  base_url: https://diemas.vercel.app
   auth_endpoint: api/auth/callback
 
 media_folder: 'public/images'
