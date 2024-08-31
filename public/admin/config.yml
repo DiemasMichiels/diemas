@@ -11,18 +11,31 @@ public_folder: '/images'
 logo_url: https://diemas.vercel.app/icon.svg
 
 collections:
-  - name: 'blog'
-    label: 'Blog Posts'
-    folder: 'content/blog'
+  - name: 'page'
+    label: 'Pages'
+    folder: 'content/pages'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{fields.slug}}'
+    summary: '{{fields.slug}} - {{fields.title}}'
     fields:
+      - { label: 'slug', name: 'slug', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - {
-          label: 'Featured Image',
-          name: 'thumbnail',
-          widget: 'image',
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
           required: false,
         }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Subtitle',
+          name: 'subtitle',
+          widget: 'markdown',
+          required: false,
+        }
+      - {
+          label: 'Text',
+          name: 'text',
+          widget: 'markdown',
+          options: { buttons: ['heading-one'] },
+          required: false,
+        }

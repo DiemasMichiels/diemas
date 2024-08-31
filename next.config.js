@@ -9,6 +9,11 @@ module.exports = {
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],
     })
+    config.module.rules.push({
+      test: /\.md$/,
+      loader: 'frontmatter-markdown-loader',
+      options: { mode: ['react-component'] },
+    })
 
     return config
   },

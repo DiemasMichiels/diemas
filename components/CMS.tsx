@@ -22,7 +22,6 @@ const CMSComponent = () => {
 
   useDOMManipulations([
     {
-      type: 'single',
       selector: 'body > div.sui.app-shell > .outer .main .container .inner',
       callback: (element) => {
         const logo = element?.childNodes[0] as HTMLImageElement
@@ -33,16 +32,6 @@ const CMSComponent = () => {
         if (title) {
           title.textContent = 'Diemas CMS'
         }
-      },
-    },
-    {
-      type: 'range',
-      selector: 'body > div.sui.app-shell .sui.menu',
-      childRange: [8, 14],
-      callback: (elements) => {
-        elements.forEach((element) => {
-          element.setAttribute('style', 'display: none')
-        })
       },
     },
   ])

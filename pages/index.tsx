@@ -1,12 +1,11 @@
 import Page from '@components/page/Page'
+import { attributes } from '@content/pages/home.md'
 import type { NextPage } from 'next'
 
-type Props = {}
-
-const Index: NextPage<Props> = () => {
+const Index: NextPage = () => {
   return (
     <Page>
-      <h1>This is a template</h1>
+      <h1>{attributes.title}</h1>
     </Page>
   )
 }
