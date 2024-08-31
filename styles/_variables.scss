@@ -3,6 +3,7 @@
   --font-brand: 'Poppins', sans-serif;
 
   // Colors
+  --color-highlight-green: 155, 86%, 44%;
   // Font
   --color-font: 0, 0%, 11%;
   --color-font-light: 0, 0%, 55%;
@@ -15,6 +16,8 @@
   --color-bg-secondary-inverse: 0, 0%, 20%;
   --color-bg-button: 0, 0%, 11%;
   --color-bg-button-inverse: 0, 0%, 96%;
+  --color-bg-button-hover: 0, 0%, 20%;
+  --color-bg-button-hover-inverse: 0, 0%, 93%;
   // Border
   --color-border: 0, 0%, 93%;
   --color-border-inverse: 0, 0%, 11%;
@@ -30,7 +33,7 @@
   // Font
   --color-font: 0, 0%, 98%;
   --color-font-light: 0, 0%, 63%;
-  --color-font-inverse: 0, 0%, 98%;
+  --color-font-inverse: 0, 0%, 11%;
   // Background
   --color-bg: 0, 0%, 11%;
   --color-bg-primary: 0, 0%, 11%;
@@ -39,6 +42,8 @@
   --color-bg-secondary-inverse: 0, 0%, 98%;
   --color-bg-button: 0, 0%, 96%;
   --color-bg-button-inverse: 0, 0%, 11%;
+  --color-bg-button-hover: 0, 0%, 93%;
+  --color-bg-button-hover-inverse: 0, 0%, 20%;
   // Border
   --color-border: 0, 0%, 11%;
   --color-border-inverse: 0, 0%, 93%;

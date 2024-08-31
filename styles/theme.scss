@@ -1,0 +1,94 @@
+.header1 {
+  font-size: 7.8rem;
+  line-height: 1.12;
+  font-weight: 700;
+
+  .highlight {
+    position: relative;
+
+    &::before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      inset: 8px -8px;
+      background: linear-gradient(
+        to right,
+        hsl(var(--color-highlight-green)) 0,
+        hsl(var(--color-highlight-green)) 4px,
+        hsl(var(--color-highlight-green), 0.32) 4px,
+        hsla(var(--color-highlight-green), 0.04) 100%
+      );
+    }
+  }
+}
+
+.header2 {
+  color: hsl(var(--color-font-light));
+  font-size: 7.8rem;
+  line-height: 1.12;
+  font-weight: 700;
+
+  .focus {
+    color: hsl(var(--color-font));
+  }
+}
+
+.header3 {
+  color: hsl(var(--color-font-light));
+  font-size: 3.2rem;
+  line-height: 1.12;
+
+  .focus {
+    color: hsl(var(--color-font));
+  }
+}
+
+.header4 {
+  font-size: 2.4rem;
+  line-height: 1.12;
+}
+
+.link {
+  color: hsl(var(--color-font));
+  padding-block: 8px;
+  padding-inline: 16px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  width: fit-content;
+  min-width: 100px;
+  padding-block: 16px;
+  padding-inline: 32px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid hsl(var(--color-border));
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &.primary {
+    color: hsl(var(--color-font-inverse));
+    background-color: hsl(var(--color-bg-button));
+    border-color: hsl(var(--color-border-inverse));
+    box-shadow: var(--color-shadow-button);
+
+    &:hover {
+      background-color: hsl(var(--color-bg-button-hover));
+    }
+  }
+
+  &.secondary {
+    color: hsl(var(--color-font));
+    background-color: hsl(var(--color-bg-button-inverse));
+    border-color: hsl(var(--color-border));
+
+    &:hover {
+      background-color: hsl(var(--color-bg-button-hover-inverse));
+    }
+  }
+}

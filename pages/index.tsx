@@ -5,7 +5,7 @@ import type { NextPage } from 'next'
 const Index: NextPage = () => {
   return (
     <Page>
-      <h1>{attributes.title}</h1>
+      <h1 className='header1'>{attributes.title}</h1>
     </Page>
   )
 }
