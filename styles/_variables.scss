@@ -1,12 +1,49 @@
 :root {
-  --color-black: 0, 0%, 0%;
-  --color-white: 0, 0%, 100%;
-
-  --color-font: 0, 0%, 0%;
-  --color-brand: 0, 0%, 100%;
-  --color-backgroundColor: 0, 0%, 100%;
-
+  // Fonts
   --font-brand: 'Poppins', sans-serif;
+
+  // Colors
+  // Font
+  --color-font: 0, 0%, 11%;
+  --color-font-light: 0, 0%, 55%;
+  --color-font-inverse: 0, 0%, 98%;
+  // Background
+  --color-bg: 0, 0%, 98%;
+  --color-bg-primary: 0, 0%, 100%;
+  --color-bg-secondary: 0, 0%, 98%;
+  --color-bg-primary-inverse: 0, 0%, 11%;
+  --color-bg-secondary-inverse: 0, 0%, 20%;
+  --color-bg-button: 0, 0%, 11%;
+  --color-bg-button-inverse: 0, 0%, 96%;
+  // Border
+  --color-border: 0, 0%, 93%;
+  --color-border-inverse: 0, 0%, 11%;
+  // Shadow
+  --color-shadow-button: 0px 6px 12px 0px hsla(0, 0%, 11%, 0.25);
+}
+
+[data-theme='dark'] {
+  // Fonts
+  --font-brand: 'Poppins', sans-serif;
+
+  // Colors
+  // Font
+  --color-font: 0, 0%, 98%;
+  --color-font-light: 0, 0%, 63%;
+  --color-font-inverse: 0, 0%, 98%;
+  // Background
+  --color-bg: 0, 0%, 11%;
+  --color-bg-primary: 0, 0%, 11%;
+  --color-bg-secondary: 0, 0%, 20%;
+  --color-bg-primary-inverse: 0, 0%, 100%;
+  --color-bg-secondary-inverse: 0, 0%, 98%;
+  --color-bg-button: 0, 0%, 96%;
+  --color-bg-button-inverse: 0, 0%, 11%;
+  // Border
+  --color-border: 0, 0%, 11%;
+  --color-border-inverse: 0, 0%, 93%;
+  // Shadow
+  --color-shadow-button: 0px 6px 12px 0px hsla(0, 0%, 11%, 0.25);
 }
 
 // Global breakpoints, free to use other if required

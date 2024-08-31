@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import { themeScript } from '@utils/themeScript'
 
 export default class MyDocument extends Document {
   render() {
@@ -15,9 +16,10 @@ export default class MyDocument extends Document {
           <link
             href='https://fonts.googleapis.com/css2?family=Poppins&display=swap'
             rel='stylesheet'
-          ></link>
+          />
         </Head>
         <body>
+          <script dangerouslySetInnerHTML={{ __html: themeScript }} />
           <Main />
           <NextScript />
         </body>

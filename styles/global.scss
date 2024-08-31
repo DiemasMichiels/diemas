@@ -4,6 +4,9 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
 }
 
 html {
@@ -23,7 +26,7 @@ body {
   font-size: 1.6rem;
   font-family: var(--font-brand);
   font-weight: 400;
-  background: hsl(var(--color-backgroundColor));
+  background: hsl(var(--color-bg));
   background-size: cover;
   background-position: center;
   background-repeat: repeat-y;
@@ -38,9 +41,9 @@ body {
 }
 
 ::selection {
-  color: hsl(var(--color-black));
+  color: hsl(var(--color-font-inverse));
   text-shadow: none;
-  background: hsl(var(--color-white));
+  background: hsl(var(--color-bg-button-inverse));
 }
 
 h1,
@@ -132,13 +135,7 @@ a {
   line-height: 1.4rem;
   text-align: center;
   text-decoration: none;
-  border: 1px solid hsl(var(--color-black));
+  border: 1px solid hsl(var(--color-border));
   outline: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    color: hsl(var(--color-white));
-    background-color: hsl(var(--color-black));
-  }
 }

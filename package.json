@@ -1,6 +1,6 @@
 {
   "name": "diemas",
-  "description": "Basic NextJS template",
+  "description": "Portfolio template for Diemas",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
