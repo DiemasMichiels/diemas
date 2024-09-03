@@ -1,0 +1,49 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-block-start: 144px;
+  margin-block-end: 72px;
+}
+
+.tag {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: radial-gradient(
+      circle,
+      hsla(var(--color-highlight-green)) 0,
+      hsla(var(--color-highlight-green)) 30%,
+      hsla(var(--color-highlight-green), 0.2) 30%,
+      hsla(var(--color-highlight-green), 0.2) 100%
+    );
+    border-radius: 9999px;
+  }
+}
+
+.title {
+  max-width: 800px;
+  margin: 16px auto;
+  text-align: center;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-block: 16px;
+}
+
+.image {
+  margin-block: 72px;
+  border-radius: 40px;
+}
