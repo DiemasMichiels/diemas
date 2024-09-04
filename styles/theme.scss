@@ -84,7 +84,9 @@
   text-decoration: none;
   border: 1px solid hsl(var(--color-border));
   border-radius: 9999px;
-  transition: background-color 0.3s ease;
+  transition:
+    padding 0.25s cubic-bezier(0.215, 0.61, 0.355, 1),
+    background-color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   cursor: pointer;
 
   svg {
@@ -99,6 +101,7 @@
     box-shadow: var(--color-shadow-button);
 
     &:hover {
+      padding-inline: 40px;
       background-color: hsl(var(--color-bg-button-hover));
     }
   }
@@ -109,6 +112,7 @@
     border-color: hsl(var(--color-border));
 
     &:hover {
+      padding-inline: 40px;
       background-color: hsl(var(--color-bg-button-hover-inverse));
     }
   }
