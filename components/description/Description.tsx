@@ -17,7 +17,9 @@ const Description = () => {
         <strong className='focus'>He delivers tailored solutions</strong> for
         upgrading your site or creating a new digital platform.
       </p>
-      <button className='button secondary'>His work</button>
+      <a className='button secondary' href='#portfolio'>
+        His work
+      </a>
     </section>
   )
 }

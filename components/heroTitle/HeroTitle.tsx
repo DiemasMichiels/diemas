@@ -11,10 +11,12 @@ const HeroTitle = () => {
           Crafting <span className='highlight'>Next-Gen</span> Web Experiences
         </h1>
         <div className={styles.buttonRow}>
-          <button className='button primary'>
+          <a className='button primary' href='mailto:info@diemas.dev'>
             <SendSVG /> Send a message
-          </button>
-          <button className='button secondary'>Discover portfolio</button>
+          </a>
+          <a className='button secondary' href='#portfolio'>
+            Discover portfolio
+          </a>
         </div>
         <img
           className={styles.image}
