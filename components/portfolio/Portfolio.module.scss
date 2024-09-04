@@ -11,6 +11,10 @@
     gap: 16px;
     margin-block-end: 72px;
 
+    h2 {
+      flex: 1;
+    }
+
     p {
       max-width: 280px;
       margin: 0;
