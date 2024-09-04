@@ -16,12 +16,12 @@ const HeroTitle = () => {
           </button>
           <button className='button secondary'>Discover portfolio</button>
         </div>
+        <img
+          className={styles.image}
+          src='https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+          alt='Stock photo of a developer'
+        />
       </section>
-      <img
-        className={clsx('container', styles.image)}
-        src='https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-        alt='Stock photo of a developer'
-      />
     </>
   )
 }

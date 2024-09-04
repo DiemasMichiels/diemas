@@ -1,7 +1,11 @@
 .header1 {
-  font-size: 7.8rem;
+  font-size: 4.4rem;
   line-height: 1.12;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 7.8rem;
+  }
 }
 
 .highlight {
@@ -25,9 +29,13 @@
 
 .header2 {
   color: hsl(var(--color-font-light));
-  font-size: 7.8rem;
+  font-size: 4dvh;
   line-height: 1.12;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 7.8rem;
+  }
 
   .focus {
     color: hsl(var(--color-font));
@@ -36,8 +44,12 @@
 
 .header3 {
   color: hsl(var(--color-font-light));
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.12;
+
+  @media (min-width: 768px) {
+    font-size: 3.2rem;
+  }
 
   .focus {
     color: hsl(var(--color-font));

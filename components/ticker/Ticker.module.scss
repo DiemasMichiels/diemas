@@ -7,12 +7,15 @@
   white-space: nowrap;
 
   > div + div {
-    margin-block-start: 24px;
+    margin-block-start: 8px;
+
+    @media (min-width: 768px) {
+      margin-block-start: 24px;
+    }
   }
 
   .ticker {
     display: inline-block;
-    height: 80px;
     margin-top: 5px;
     animation: marquee 50s linear infinite;
 
@@ -32,7 +35,11 @@
 
     .item {
       display: inline-block;
-      margin: 0 24px;
+      margin: 0 16px;
+
+      @media (min-width: 768px) {
+        margin: 0 24px;
+      }
 
       &:nth-child(3n + 1) {
         &::before {
