@@ -9,16 +9,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   margin-block-end: 16px;
   background-color: hsl(var(--color-bg-button));
   box-shadow: var(--color-shadow-button);
-  border-radius: 20px;
+  border-radius: 16px;
 
   svg {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     color: hsl(var(--color-font-inverse));
+  }
+
+  @media (min-width: 768px) {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

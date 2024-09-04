@@ -7,6 +7,8 @@
   .title {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
     margin-block-end: 72px;
 
     p {
@@ -26,6 +28,7 @@
     }
 
     .project {
+      position: relative;
       max-width: 100%;
 
       img {
@@ -42,17 +45,29 @@
         padding-block-start: 20px;
         padding-inline: 24px;
 
-        span {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 8px;
+        h4 {
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
 
-          svg {
-            width: 16px;
-            height: 16px;
-            transition: transform 0.3s ease;
+        span {
+          display: none;
+
+          @media (min-width: 992px) {
+            display: inline-block;
+            margin-inline-end: 16px;
           }
+        }
+
+        svg {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          right: 16px;
+          bottom: 4px;
+          transition: transform 0.3s ease;
         }
       }
 

@@ -43,9 +43,8 @@ const Portfolio = () => {
             <img src={project.image} alt={project.title} />
             <div className={styles.content}>
               <h4 className='header4'>{project.title}</h4>
-              <span>
-                View Project <ArrowUpRightSVG />
-              </span>
+              <span>View Project</span>
+              <ArrowUpRightSVG />
             </div>
           </a>
         ))}

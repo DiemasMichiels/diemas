@@ -1,4 +1,5 @@
 import Description from '@components/description/Description'
+import Footer from '@components/footer/Footer'
 import HeroTitle from '@components/heroTitle/HeroTitle'
 import Page from '@components/page/Page'
 import Portfolio from '@components/portfolio/Portfolio'
@@ -29,6 +30,7 @@ const Index: NextPage = () => {
         ]}
       />
       <Portfolio />
+      <Footer />
     </Page>
   )
 }
