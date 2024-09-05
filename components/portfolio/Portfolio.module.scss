@@ -34,6 +34,7 @@
     .project {
       position: relative;
       max-width: 100%;
+      text-decoration: none;
 
       img {
         width: 100%;
@@ -46,7 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-block-start: 20px;
+        padding-block-start: 16px;
         padding-inline: 24px;
 
         h4 {
@@ -70,7 +71,7 @@
           width: 16px;
           height: 16px;
           right: 16px;
-          bottom: 4px;
+          bottom: 6px;
           transition: transform 0.3s ease;
         }
       }
