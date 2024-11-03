@@ -1,0 +1,80 @@
+.logo {
+  margin-block-start: 32px;
+  margin-block-end: 84px;
+
+  @media (min-width: 768px) {
+    margin-block-end: 144px;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto 32px;
+
+  @media (min-width: 768px) {
+    margin: 0 auto 16px;
+  }
+
+  p {
+    color: hsl(var(--color-font-light));
+    font-weight: 700;
+  }
+}
+
+.title {
+  margin-block: 64px 32px;
+}
+
+.backButton {
+  padding-inline: 8px;
+  border: none;
+
+  svg {
+    margin-inline-end: 8px;
+    transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(-8px);
+    }
+  }
+}
+
+.details {
+  div {
+    display: flex;
+    flex-direction: column;
+    padding-block: 16px;
+    font-weight: 700;
+    border-bottom: 1px solid hsl(var(--color-border));
+
+    @media (min-width: 576px) {
+      flex-direction: row;
+    }
+
+    dt {
+      flex: 1;
+      color: hsl(var(--color-font-light));
+      text-transform: capitalize;
+    }
+
+    dd {
+      margin-inline-start: 0;
+
+      @media (min-width: 576px) {
+        margin: initial;
+      }
+
+      @media (min-width: 768px) {
+        flex: 4;
+      }
+    }
+  }
+}
+
+.previewButton {
+  margin-block-start: 16px;
+}
