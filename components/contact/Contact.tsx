@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.contactForm}>
-            <h3>We look forward to connection with you!</h3>
+            <h3>We look forward to connecting with you!</h3>
             <iframe
               data-tally-src={`https://tally.so/embed/${theme === 'dark' ? TALLY_DARK : TALLY_LIGHT}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`}
               loading='lazy'
