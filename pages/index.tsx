@@ -1,3 +1,4 @@
+import Contact from '@components/contact/Contact'
 import Description from '@components/description/Description'
 import Footer from '@components/footer/Footer'
 import HeroTitle from '@components/heroTitle/HeroTitle'
@@ -30,6 +31,7 @@ const Index: NextPage = () => {
         ]}
       />
       <Portfolio />
+      <Contact />
       <Footer />
     </Page>
   )

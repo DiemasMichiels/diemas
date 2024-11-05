@@ -9,8 +9,19 @@
 }
 
 .highlight {
+  z-index: 1;
   position: relative;
   display: inline-block;
+
+  --highlight-color: var(--color-highlight-green);
+
+  &.blue {
+    --highlight-color: var(--color-highlight-blue);
+  }
+
+  &.purple {
+    --highlight-color: var(--color-highlight-purple);
+  }
 
   &::before {
     z-index: -1;
@@ -19,10 +30,10 @@
     inset: 0px -8px;
     background: linear-gradient(
       to right,
-      hsl(var(--color-highlight-green)) 0,
-      hsl(var(--color-highlight-green)) 4px,
-      hsl(var(--color-highlight-green), 0.32) 4px,
-      hsla(var(--color-highlight-green), 0.04) 100%
+      hsl(var(--highlight-color)) 0,
+      hsl(var(--highlight-color)) 4px,
+      hsl(var(--highlight-color), 0.32) 4px,
+      hsla(var(--highlight-color), 0.04) 100%
     );
   }
 }
@@ -94,8 +105,8 @@
   cursor: pointer;
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   &.primary {

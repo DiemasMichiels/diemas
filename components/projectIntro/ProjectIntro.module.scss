@@ -32,6 +32,8 @@
   border: none;
 
   svg {
+    width: 16px;
+    height: 16px;
     margin-inline-end: 8px;
     transition: transform 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
   }

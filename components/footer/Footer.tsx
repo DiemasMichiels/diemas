@@ -54,16 +54,6 @@ const Footer = () => {
                   Github
                 </a>
               </li>
-              <li>
-                <a
-                  className='link'
-                  href='https://x.com/MichielsDiemas'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  x.com
-                </a>
-              </li>
             </ul>
           </div>
         </div>
