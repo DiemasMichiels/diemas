@@ -35,6 +35,7 @@
     "typescript": "5.5.3"
   },
   "overrides": {
+    "next": "15.0.2",
     "@types/react": "18.3.12"
   }
 }
