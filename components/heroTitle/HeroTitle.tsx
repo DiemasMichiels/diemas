@@ -12,7 +12,7 @@ const HeroTitle = () => {
         Crafting <span className='highlight'>Next-Gen</span> Web Experiences
       </h1>
       <div className={styles.buttonRow}>
-        <a className='button primary' href='mailto:info@diemas.dev'>
+        <a className='button primary' href='#contact'>
           <SendSVG /> Send a message
         </a>
         <a className='button secondary' href='#portfolio'>

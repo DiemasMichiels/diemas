@@ -17,7 +17,7 @@ const ProjectIntro = ({ title, description, details, link }: Props) => {
   return (
     <section className={clsx('container', styles.section)}>
       <Logo className={styles.logo} />
-      <Link className={clsx('button', styles.backButton)} href='/'>
+      <Link className={clsx('button', styles.backButton)} href='/#portfolio'>
         <ArrowLeftSVG />
         Back to Home
       </Link>
