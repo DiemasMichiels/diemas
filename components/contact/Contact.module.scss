@@ -49,6 +49,37 @@ e.background {
         max-width: 80%;
       }
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      p {
+        margin: 0;
+      }
+
+      .errorInput {
+        border: 1px solid hsl(var(--color-error));
+      }
+
+      .formActions {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .status {
+          display: flex;
+          flex-direction: column;
+          padding-inline: 8px;
+          color: hsl(var(--color-font-light));
+
+          .error {
+            color: hsl(var(--color-error));
+          }
+        }
+      }
+    }
   }
 
   .contactAvailability {

@@ -91,7 +91,16 @@ button,
 a {
   color: hsl(var(--color-font));
   font-family: hsl(var(--font-brand));
+  font-size: 1.6rem;
   cursor: pointer;
+}
+
+input,
+textarea {
+  color: hsl(var(--color-font));
+  font-family: hsl(var(--font-brand));
+  font-size: 1.6rem;
+  background-color: hsl(var(--color-bg-input));
 }
 
 .visuallyHidden {

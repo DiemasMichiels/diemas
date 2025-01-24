@@ -1,6 +1,7 @@
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
 import { SessionProvider } from 'next-auth/react'
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import SEO from '@root/next-seo.config'
 import type { AppProps } from 'next/app'
 
@@ -19,7 +20,11 @@ const App = ({ Component, pageProps: { session, ...pageProps } }: AppProps) => {
       </Head>
       <DefaultSeo {...SEO} />
       <SessionProvider session={session}>
-        <Component {...pageProps} />
+        <GoogleReCaptchaProvider
+          reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA ?? ''}
+        >
+          <Component {...pageProps} />
+        </GoogleReCaptchaProvider>
       </SessionProvider>
     </>
   )
