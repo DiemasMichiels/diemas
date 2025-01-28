@@ -11,9 +11,10 @@ type Props = {
   description: string
   details?: ProjectDetailsType
   link?: string
+  blog?: string
 }
 
-const ProjectIntro = ({ title, description, details, link }: Props) => {
+const ProjectIntro = ({ title, description, details, link, blog }: Props) => {
   return (
     <section className={clsx('container', styles.section)}>
       <Logo className={styles.logo} />
@@ -33,13 +34,13 @@ const ProjectIntro = ({ title, description, details, link }: Props) => {
           ))}
         </dl>
       )}
-      {link && (
+      {(link || blog) && (
         <Link
           className={clsx('button primary', styles.previewButton)}
-          href={link}
+          href={(link || blog) ?? ''}
           target='_blank'
         >
-          <WorldSVG /> Live Preview
+          <WorldSVG /> {blog ? 'Read more' : 'Live Preview'}
         </Link>
       )}
     </section>

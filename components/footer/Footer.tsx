@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <p className='container'>
-        © Diemas {new Date().getFullYear()}, All rights reserved
+        © Diemas 2022 - {new Date().getFullYear()} | All rights reserved
       </p>
     </footer>
   )

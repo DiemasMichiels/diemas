@@ -17,6 +17,7 @@ const Projects: NextPage<Props> = ({ project }) => {
         description={project.description}
         details={project.details}
         link={project.link}
+        blog={project.blog}
       />
       <ProjectImages images={project.images} />
       <Footer />

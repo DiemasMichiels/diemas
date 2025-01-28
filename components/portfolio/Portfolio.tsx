@@ -23,15 +23,103 @@ export type Project = {
   thumbnail: string
   images: ProjectImageType[]
   details?: ProjectDetailsType
-  link: string
+  link?: string
+  blog?: string
 }
 
 export const PROJECTS: Project[] = [
   {
+    slug: 'tomorrowland',
+    title: 'Tomorrowland',
+    description: `Tomorrowland, one of the largest electronic dance music festivals globally, required a comprehensive digital ecosystem to support its operations. The project extended beyond a single website, encompassing the development of multiple applications tailored to the festival's needs. This included the main website, a ticketing system, and a mobile application, among others.
+    
+The frontend development was led by a dedicated team, which utilized a varied tech stack depending on the project requirements. For the majority of the applications, Next.js and TypeScript served as the primary technologies, ensuring robust, scalable, and maintainable solutions. Each application was designed to enhance the user experience and streamline festival operations, reflecting the high standards associated with the Tomorrowland brand.`,
+    thumbnail: '/images/tomorrowland.jpg',
+    images: [
+      {
+        src: '/images/tomorrowland.jpg',
+        alt: 'Tomorrowland',
+      },
+      {
+        src: '/images/tomorrowland-nft.jpg',
+        alt: 'Tomorrowland NFT',
+      },
+    ],
+    details: {
+      client: 'Tomorrowland',
+      industry: 'Entertainment',
+      services: 'Frontend Development',
+      stack: 'NextJS, Typescript, Web Components, React Native',
+      year: '2022 - 2024',
+    },
+    link: 'https://tomorrowland.com',
+  },
+  {
+    slug: 'telenet-yugo',
+    title: 'Telenet YUGO',
+    description: `Telenet YUGO was a comprehensive over-the-top (OTT) streaming platform developed for Telenet, enabling users to watch, record, and playback the latest TV shows. The web application was built using React and seamlessly integrated with ChromeCast, Tizen, and WebOS to ensure a smooth and versatile user experience across multiple devices.`,
+    thumbnail: '/images/telenet-yugo.jpg',
+    images: [
+      {
+        src: '/images/telenet-yugo.jpg',
+        alt: 'Telenet YUGO',
+      },
+    ],
+    details: {
+      client: 'Telenet - icapps',
+      industry: 'Entertainment',
+      services: 'Web App Development',
+      stack: 'React, Typescript, ChromeCast, Tizen, WebOS',
+      year: '2019 - 2022',
+    },
+    blog: 'https://icapps.com/cases/telenet-yugo',
+  },
+  {
+    slug: 'telenet-play-sports',
+    title: 'Telenet Play Sports',
+    description:
+      'The Play Sports app serves as the premier destination for sports enthusiasts in Belgium, offering live streaming of sports events, highlights, and news. The application is available on iOS, Android, and Web, providing a consistent and engaging experience across platforms.',
+    thumbnail: '/images/telenet-play-sports.jpg',
+    images: [
+      {
+        src: '/images/telenet-play-sports.jpg',
+        alt: 'Telenet Play Sports',
+      },
+    ],
+    details: {
+      client: 'Telenet - icapps',
+      industry: 'Entertainment',
+      services: 'Web App Development',
+      stack: 'React, Typescript, Styled Components, Redux Sagas',
+      year: '2019',
+    },
+    blog: 'https://icapps.com/cases/telenet-play-sports',
+  },
+  {
+    slug: 'keytrade-bank',
+    title: 'Keytrade bank',
+    description: `Keytrade Bank introduced Belgium's first React Native banking and trading app, revolutionizing the digital banking experience. The project involved the development of both mobile and web applications, leveraging React and React Native to deliver a seamless and user-friendly interface.`,
+    thumbnail: '/images/keytrade.jpg',
+    images: [
+      {
+        src: '/images/keytrade.jpg',
+        alt: 'Keytrade bank',
+      },
+    ],
+    details: {
+      client: 'Keytrade bank - icapps',
+      industry: 'Finance',
+      services: 'Web App / React Native Development',
+      stack: 'React, React Native, TypeScript',
+      year: '2018 - 2019',
+    },
+    blog: 'https://icapps.com/cases/keytrade-bank',
+  },
+  {
     slug: '2cv-huppel',
     title: '2CV Club Huppel',
     description:
-      'The 2CV Club Huppel is a Belgian car club that organizes events and gatherings for Citroen 2CV enthusiasts. The website provides information about the club, upcoming events, and a gallery of photos.',
+      '2CV Club Huppel, a Belgian car club dedicated to Citroen 2CV enthusiasts, required a website to showcase club information, upcoming events, and a gallery of photos. The project focused on delivering a visually appealing and informative platform using WebFlow.',
     thumbnail: '/images/2cv-huppel.jpg',
     images: [
       {
@@ -52,7 +140,7 @@ export const PROJECTS: Project[] = [
     slug: 'salon-zuiver',
     title: 'Salon Zuiver',
     description:
-      'Salon Zuiver is a beauty salon in Belgium. The website provides information about the salon, services, pricing and contact details. Customers can book appointments online.',
+      'Salon Zuiver, a beauty salon in Belgium, needed a website to display its services, pricing, and contact details while enabling customers to book appointments online. The platform was developed using Next.js, Prismic, React, and TypeScript to ensure a modern and efficient user experience.',
     thumbnail: '/images/salon-zuiver.jpg',
     images: [
       {
@@ -70,10 +158,31 @@ export const PROJECTS: Project[] = [
     link: 'https://salonzuiver.be',
   },
   {
+    slug: 'sdworx',
+    title: 'SD Worx',
+    description:
+      'To address a shortage of parking spaces, SD Worx required an internal application for staff to share parking spots. The solution was developed as a web and mobile app using React and React Native, ensuring ease of use and accessibility.',
+    thumbnail: '/images/sdworx.jpg',
+    images: [
+      {
+        src: '/images/sdworx.jpg',
+        alt: 'SD Worx',
+      },
+    ],
+    details: {
+      client: 'SD Worx - icapps',
+      industry: 'Automotive',
+      services: 'React Native Development',
+      stack: 'React, React Native, Javascript',
+      year: '2018',
+    },
+    blog: 'https://icapps.com/cases/sd-worx',
+  },
+  {
     slug: 'kot-geel',
     title: 'Kot Geel',
     description:
-      'Kot Geel is a student housing provider in Belgium. The website provides information about the available rooms, pricing, and contact details.',
+      'Kot Geel, a student housing provider in Belgium, sought a website to showcase available rooms, pricing, and contact details. The platform was built using Next.js, React, and TypeScript, offering a clean and intuitive interface for prospective tenants.',
     thumbnail: '/images/kot-geel.jpg',
     images: [
       {
@@ -94,7 +203,7 @@ export const PROJECTS: Project[] = [
     slug: 'kempisch-licht-en-geluid',
     title: 'Kempisch licht en geluid',
     description:
-      'Kempisch Licht en Geluid is a Belgian company that provides lighting and sound equipment for events. The website showcases the products and services offered by the company. You can also view photos of past events.',
+      'Kempisch Licht en Geluid, a Belgian company specializing in lighting and sound equipment for events, required a website to showcase its products, services, and past event photos. The project utilized Next.js, Prismic, React, and TypeScript to deliver a dynamic and visually engaging platform.',
     thumbnail: '/images/kempisch-licht-en-geluid.jpg',
     images: [
       {
@@ -115,7 +224,7 @@ export const PROJECTS: Project[] = [
     slug: 'garage-michiels',
     title: 'Garage Michiels',
     description:
-      'Garage Michiels is a car dealership in Belgium. The website provides information about the cars available for sale, pricing, and contact details. They also offer car repair and maintenance services.',
+      'Garage Michiels, a car dealership in Belgium, needed a website to display its inventory of cars for sale, pricing, and contact details, as well as information about its car repair and maintenance services. The platform was developed using Next.js, React, and TypeScript, ensuring a professional and user-friendly experience.',
     thumbnail: '/images/garage-michiels.jpg',
     images: [
       {
